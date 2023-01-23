@@ -1,1 +1,15 @@
-
+ls - lists the contents of your current directory
+cd .. - Used to move back in the repository
+cd - is used to move to a change directories
+less - will print out the contents of a file
+pwd - will show the file path of your parent working directory (i.e the directory you’re currently 
+cd ~ or cd - This command takes you back to the home repository
+mv - This command is used to move files to a different directiry by indicating the specific file name and its new directory.
+help - Shows a list of available commands 
+man - This followed by a specific command shows what the command does.
+rm - Removes File from Directory
+mkdir - Creates a new Directory
+sudo - Perform any action on any file using a password
+grep - Lets you lok for a specific phrase (text) within a file
+cp - Used to duplicate a file, cp [ITEM_TO_COPY] ../[NEW_ITEM_NAME] copies file from current directory to another directory
+touch - touch ITEM can be used to create a new file
