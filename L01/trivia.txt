@@ -1,1 +1,12 @@
+1. Describe the differences between Linux and Windows (or MacOS) based on your own experience
+with them so far.
 
+- Linux is open-source whereas Windows is proprietary.
+- Linux is generally prefferd by more developers, Windows is preferred by more general users.
+- Linux is known for effectiveness and security whereas Windows is known for its efficiency of use and the compatibility with different hardware/software.
+- Linux uses a command-line interface whereas Windows uses graphical user interfaces.
+- Linux is free to use for all whereas Windows requires a paid license to use.
+- Linux is fully customizable but Windows is simple and user-friendly.
+
+2. How many sign boards did you see on your way to Paradise?
+   2 SIGNS
