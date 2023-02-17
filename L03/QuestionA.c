@@ -10,6 +10,7 @@ int main() {
                 int x = n * n - 100;
                 printf("%d + 100 = %d * %d\n", x, n, n);
                 printf("%d + 268 = %d * %d\n", x, m, m);
+		printf("%d satisfies the required conditions\n", x);
             }
         }
     }
