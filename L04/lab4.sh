@@ -4,33 +4,31 @@
 WDIR="$1"
 cd "$WDIR"
 
-if [ -z "$3" ]; then
-    filename="file1.txt"
-else
-    filename="$3"
+FILE="file1.txt"
+if [ -n "$3" ] ; then
+    FILE="$3"
 fi
 
 if [ "$2" -eq 1 ] ; then
-    if [ ! -f "$filename" ] ; then
-        echo "$USER" > "$filename"
+    if [ ! -f "$FILE" ] ; then
+        echo "$USER" > "$FILE"
     fi
 elif [ "$2" -eq 2 ] ; then
-    if [ -f "$filename" ] ; then
+    if [ -f "$FILE" ] ; then
         if [ ! -d "backup" ] ; then
-            mkdir "backup"
+            mkdir backup
         fi
-        cp "$filename" "backup/"
+        cp "$FILE" backup/
     fi
 elif [ "$2" -eq 3 ] ; then
-    if [ -f "backup/$filename" ] ; then
-        cp "backup/$filename" "$filename"
-        rm "backup/$filename"
+    if [ -f "backup/$FILE" ] ; then
+        cp "backup/$FILE" .
+        rm "backup/$FILE"
     fi
 fi
 
-if [ "$#" -gt 3 ]; then
+if [ "$#" -gt 3 ] ; then
     echo "${@:4}" > excess.txt
 fi
 
 echo "Finished"
-
