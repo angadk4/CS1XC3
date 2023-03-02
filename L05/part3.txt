@@ -1,5 +1,0 @@
-The reported times are all zero since the gprof output shows  time spent in each function, and the program is too fast to be accurately measured by gprof. Essentially, the execution time is too short for gprof to measure accurately.
-
-The factors_itr function is only called once every time the program is run because it is only called for the input number entered by the user. Since the program only takees input from user once, the function is called once.
-
-There is a mathematical relationship between the input number and the number of recursive calls. The function is recursively called for all numbers between 2 and the square root of the input number. Therefore, the number of recursive calls is proportionate to the square root of the input number. As for the number of prime factors that each number produces, there is not any mathematical relationship between the input number and the number of prime factors. The number of prime factors depends on the prime factors of the number itself, which is not related to the input in any way.
