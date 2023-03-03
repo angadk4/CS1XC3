@@ -2,4 +2,4 @@
 
 2 - The factors_itr function is only being called once because it is only called inside the main function, which is executed just once when the program is run. Essentially, the function is only being called one time for each input number and mode combination.
 
-3 - There is not any concrete mathematical relationship between the input number and the number of recursive calls, as it will obviously depend on the exact inputted numbers. However, poteentially larger numbers with more prime factors will result in more recursive calls, since the algorithm will need to explore a greater number of possible combinations to find all factors.
+3 - There is not any concrete mathematical relationship between the input number and the number of recursive calls, as it will obviously depend on the exact inputted numbers. Essentially, the number of recursive calls depend on the factors of a number, which vary greatly. However, potentially larger numbers will always results in more prime factor, because there is a greater chance of several bigger prime numbers to be factors of larger numbers.
