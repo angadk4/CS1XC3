@@ -1,4 +1,4 @@
-a) The iterative and recursive algorithms are similar in that they both calculate the factorial of the input values correctly. However, they differ in their approach. The iterative algorithm uses a loop to multiply the numbers while the recursive algorithm calls itself repeatedly until it reaches the base case. The iterative algorithm has more repetition because it uses a loop.
+a) The iterative and recursive algorithms are similar since they both calculate the factorial of the input values correctly. However, they are different in their approach. The iterative algorithm uses a loop to multiply the numbers while the recursive algorithm calls itself repeatedly until it reaches the base case. The iterative algorithm generally has more repetition because it uses a loop.
 
 (b) It appears that line 144     for (int j = 0; j < 50; j++) {     is being run the most times. This is likely because the outer loop is being executed many times, and for each iteration of the outer loop, the inner loop is also being executed 50 times. This could result in the loop on line 144 being run many times.
 
