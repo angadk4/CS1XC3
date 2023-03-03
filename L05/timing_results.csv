@@ -1,4 +1,4 @@
-num,linear(0),binary(1),fibonacci,notes
+num,linear(0),binary(1),fibonacci(2),notes
 1,0m0.003s,0m0.003s,0m0.002s,2
 4,0m0.003s,0m0.003s,0m0.003s,0,1,2
 22,0m0.003s,0m0.003s,0m0.002s,2
