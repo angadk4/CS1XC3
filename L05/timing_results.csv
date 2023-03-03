@@ -1,15 +1,15 @@
 num,linear(0),binary(1),fibonacci(2),notes
-1,0m0.003s,0m0.003s,0m0.002,All algorithms are equally fast, but fibonacci is fastest likely as 1 is already included in the fibonaacci sequence.
-4,0m0.003s,0m0.003s,0m0.003s,All algorithms are equally fast for this number, as similar time is likely required to solve.
-22,0m0.003s,0m0.003s,0m0.002s,Fibonacci search is faster than linear and binary search due to its ability to skip elements, and since 22 is a fib number.
+1,0m0.003s,0m0.003s,0m0.002,All algorithms are equally fast but fibonacci is fastest likely as 1 is already included in the fibonaacci sequence.
+4,0m0.003s,0m0.003s,0m0.003s,All algorithms are equally fast for this number as similar time is likely required to solve.
+22,0m0.003s,0m0.003s,0m0.002s,Fibonacci search is faster than linear and binary search due to its ability to skip elements and since 22 is a fib number.
 37,0m0.002s,0m0.003s,0m0.003s,Linear search is faster than binary and fibonacci search in this case especially due to the small input size.
 22906,0m0.002s,0m0.002s,0m0.002s,All algorithms are equally fast for such a large input size.
 53757,0m0.003s,0m0.003s,0m0.003s,All algorithms are equally fast for such a large input size.
-112591,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster, since linear takes more calls and more time with larger numbers.
+112591,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster since linear takes more calls and more time with larger numbers.
 361940,0m0.003s,0m0.003s,0m0.002s,Fibonacci search is faster than linear and binary search since it has the ability to skip elements and 361940 is a fib number.
 475713,0m0.003s,0m0.002s,0m0.003s,Binary search is faster than linear and fibonacci search due to efficiency with large numbers and logarithmic time complexity.
-893766,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster, since linear takes more calls and more time with larger numbers.
+893766,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster since linear takes more calls and more time with larger numbers.
 996637,0m0.003s,0m0.003s,0m0.003s,All algorithms are equally fast for such a large input size.
 996639,0m0.003s,0m0.002s,0m0.003s,Binary search is faster than linear and fibonacci search due to efficiency with large numbers and logarithmic time complexity.
-996652,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster, since linear takes more calls and more time with larger numbers.
--996652,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster, since linear takes more calls and more time with larger numbers, especially when negative.
+996652,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster since linear takes more calls and more time with larger numbers.
+-996652,0m0.003s,0m0.002s,0m0.002s,Binary search and fibonacci search are faster since linear takes more calls and more time with larger numbers especially when negative.
