@@ -1,15 +1,15 @@
 num,linear(0),binary(1),fibonacci,notes
-1,2200,2248,2228,The memory usage for all three algorithms is similar for small inputs like 1. Results can be acheived in one step.
-4,2128,2228,2128,The binary search algorithm uses more memory than the other two algorithms for the input of 4. This may be due to its logarithmic time complexity, and since it requires more comparisons.
-22,2256,2252,2220,The linear search algorithm uses more memory than the other two algorithms for the input of 22. This may be due to its linear time complexity.
-37,2128,2264,2264,The binary search and Fibonacci algorithms use more memory than the linear search algorithm for the input of 37. This may be due to their logarithmic time complexity.
-22906,2220,2212,2220,The memory usage for all three algorithms is similar for this input.
-53757,2232,2304,2228,The binary search algorithm uses more memory than the other two algorithms for the input of 53757. This may be due to its logarithmic time complexity.
-112591,2128,2220,2208,The binary search and linear search algorithms use less memory than the Fibonacci algorithm for the input of 112591. This may be due to Fibonacci's exponential time complexity.
-361940,2308,2256,2300,The linear search algorithm uses less memory than the binary search and Fibonacci algorithms for the input of 361940. This may be due to its linear time complexity.
-475713,2216,2208,2220,The memory usage for all three algorithms is similar for this input.
-893766,2208,2216,2128,The binary search algorithm uses less memory than the linear search and Fibonacci algorithms for the input of 893766. This may be due to its logarithmic time complexity.
-996637,2224,2256,2256,The memory usage for all three algorithms is similar for this input.
-996639,2260,2244,2248,The memory usage for all three algorithms is similar for this input.
-996652,2244,2300,2308,The binary search and Fibonacci algorithms use more memory than the linear search algorithm for the input of 996652. This may be due to their logarithmic time complexity.
--996652,2232,2256,2308,The binary search and Fibonacci algorithms use more memory than the linear search algorithm for this input, which is consistent with their logarithmic time complexity.
+1,2200,2248,2228,The maximum resident set size for all three algorithms is relatively close for this due to the small input size. It is not clear why binary search has a slightly higher memory usage than the other two algorithms.
+4,2128,2228,2128,For this input size, binary search has a significantly higher maximum resident set size than the other two algorithms. This may be due to the extra memory required for maintaining the sorted array.
+22,2256,2252,2220,Linear search has a slightly higher maximum resident set size than the other two algorithms for this input size. It is not clear why this is the case, but possibly due to the need to store the array.
+37,2128,2264,2264,Binary search and Fibonacci algorithms have a significantly higher maximum resident set size than the linear search algorithm for this input size. This may be due to the recursive nature of both algorithms.
+22906,2220,2212,2220,All three algorithms have similar maximum resident set sizes for this input size. It is not clear why the binary search algorithm has a slightly lower maximum resident set size than the other two algorithms.
+53757,2232,2304,2228,Binary search has the highest maximum resident set size among the three algorithms for this input size, even though it has a lower runtime than the Fibonacci algorithm. This may be due to the extra memory required for maintaining the sorted array.
+112591,2128,2220,2208,Binary search and Fibonacci algorithms have a significantly higher maximum resident set size than the linear search algorithm for this input size. This may be due to the recursive nature of both algorithms.
+361940,2308,2256,2300,Linear search has the highest maximum resident set size among the three algorithms for this input size, even though it has a lower runtime than the binary search algorithm. This may be due to the extra memory required for the loop variable and other data structures.
+475713,2216,2208,2220,All three algorithms have similar maximum resident set sizes for this input size. It is not clear why the linear search algorithm has a slightly lower maximum resident set size than the other two algorithms.
+893766,2208,2216,2128,For this input size, Fibonacci algorithm has a significantly lower maximum resident set size than the other two algorithms, even though it has a higher runtime than the linear search algorithm. This may be due to the fact that Fibonacci algorithm only needs to store two variables at a time.
+996637,2224,2256,2256,All three algorithms have similar maximum resident set sizes for this input size. It is not clear why the linear search algorithm has a slightly higher maximum resident set size than the other two algorithms.
+996639,2260,2244,2248,All three algorithms have similar maximum resident set sizes for this input size. It is not clear why the linear search algorithm has a slightly higher maximum resident set size than the other two algorithms.
+996652,2244,2300,2308,Both binary search and Fibonacci algorithms have a significantly higher maximum resident set size than the linear search algorithm for this input size. This may be due to the recursive nature of both algorithms.
+-996652,2232,2256,2308,The negative input is not clear and may be an outlier.
