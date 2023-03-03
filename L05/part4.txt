@@ -1,7 +1,7 @@
 a) The iterative and recursive algorithms are similar in that they both calculate the factorial of the input values correctly. However, they differ in their approach. The iterative algorithm uses a loop to multiply the numbers while the recursive algorithm calls itself repeatedly until it reaches the base case. The iterative algorithm has more repetition because it uses a loop.
 
-(b) The most executed line in the iterative algorithm is the line that updates the factorial variable by multiplying it with the current number in the loop. In the recursive algorithm, the most executed line is the line that calls the function itself with the updated input parameter. They are not the same.
+(b) It appears that line 144     for (int j = 0; j < 50; j++) {     is being run the most times. This is likely because the outer loop is being executed many times, and for each iteration of the outer loop, the inner loop is also being executed 50 times. This could result in the loop on line 144 being run many times.
 
 (c) There are no parts of the code which are not exercised.
 
-(d) If we were to try to optimize either function, a good place to start would be to optimize the base case check in the recursive algorithm. This could help to reduce the number of function calls and improve performance. Additionally, for the iterative algorithm, we could try to implement a more efficient multiplication algorithm, such as the Karatsuba algorithm, to further optimize the code.
+(d) If we were to try to optimize either function, a good place to start would be to optimize the base case check in the recursive algorithm. This could help to reduce the number of function calls and improve performance. Additionally, for the iterative algorithm, we could try to implement a more efficient multiplication algorithm to further optimize the code.
