@@ -1,5 +1,5 @@
 num,linear(0),binary(1),fibonacci,notes
-1,2200,2248,2228,The maximum resident set size for all three algorithms is relatively close for this due to the small input size. It is not clear why binary search has a slightly higher memory usage than the other two algorithms.
+1,2200,2248,2228,The maximum resident set size for all three algorithms is relatively close for this due to the small input size. Binary may have a higher value do the need to store extra variables unessecarily for a small num such as 1.
 4,2128,2228,2128,For this input size, binary search has a significantly higher maximum resident set size than the other two algorithms. This may be due to the extra memory required for maintaining the sorted array.
 22,2256,2252,2220,Linear search has a slightly higher maximum resident set size than the other two algorithms for this input size. It is possibly due to the need to store the array.
 37,2128,2264,2264,Binary search and Fibonacci algorithms have a significantly higher maximum resident set size than the linear search algorithm for this input size. This may be due to the recursive nature of both algorithms.
@@ -12,4 +12,4 @@ num,linear(0),binary(1),fibonacci,notes
 996637,2224,2256,2256,All three algorithms have similar maximum resident set sizes for this input size. 
 996639,2260,2244,2248,All three algorithms have relatively similar maximum resident set sizes for this input size. 
 996652,2244,2300,2308,Both binary search and Fibonacci algorithms have a significantly higher maximum resident set size than the linear search algorithm for this input size. This is likely due to the recursive nature of both algorithms.
--996652,2232,2256,2308,fibonacci has the highest maximum resident set size among the three algorithms for this input size, likely due to its complexity with negative numbers.
+-996652,2232,2256,2308,Fibonacci has the highest maximum resident set size among the three algorithms for this input size, likely due to its complexity with negative numbers.
