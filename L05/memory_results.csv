@@ -1,6 +1,6 @@
 num,linear(0),binary(1),fibonacci,notes
-1,2200,2248,2228,The memory usage for all three algorithms is similar for small inputs like 1.
-4,2128,2228,2128,The binary search algorithm uses more memory than the other two algorithms for the input of 4. This may be due to its logarithmic time complexity.
+1,2200,2248,2228,The memory usage for all three algorithms is similar for small inputs like 1. Results can be acheived in one step.
+4,2128,2228,2128,The binary search algorithm uses more memory than the other two algorithms for the input of 4. This may be due to its logarithmic time complexity, and since it requires more comparisons.
 22,2256,2252,2220,The linear search algorithm uses more memory than the other two algorithms for the input of 22. This may be due to its linear time complexity.
 37,2128,2264,2264,The binary search and Fibonacci algorithms use more memory than the linear search algorithm for the input of 37. This may be due to their logarithmic time complexity.
 22906,2220,2212,2220,The memory usage for all three algorithms is similar for this input.
