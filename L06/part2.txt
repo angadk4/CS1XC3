@@ -1,0 +1,119 @@
+# /etc/profile
+
+# System wide environment and startup programs, for login setup
+# Functions and aliases go in /etc/bashrc
+
+# It's NOT a good idea to change this file unless you know what you
+# are doing. It's much better to create a custom.sh shell script in
+# /etc/profile.d/ to make custom changes to your environment, as this
+# will prevent the need for merging in future updates.
+
+pathmunge () {
+    case ":${PATH}:" in
+        *:"$1":*)
+            ;;
+        *)
+            if [ "$2" = "after" ] ; then
+                PATH=$PATH:$1
+            else
+                PATH=$1:$PATH
+            fi
+    esac
+}
+
+
+if [ -x /usr/bin/id ]; then
+    if [ -z "$EUID" ]; then
+        # ksh workaround
+        EUID=`/usr/bin/id -u`
+        UID=`/usr/bin/id -ru`
+    fi
+    USER="`/usr/bin/id -un`"
+    LOGNAME=$USER
+    MAIL="/var/spool/mail/$USER"
+fi
+
+# Path manipulation
+if [ "$EUID" = "0" ]; then
+    pathmunge /usr/sbin
+    pathmunge /usr/local/sbin
+else
+    pathmunge /usr/local/sbin after
+    pathmunge /usr/sbin after
+fi
+
+HOSTNAME=`/usr/bin/hostname 2>/dev/null`
+HISTSIZE=1000
+if [ "$HISTCONTROL" = "ignorespace" ] ; then
+    export HISTCONTROL=ignoreboth
+else
+    export HISTCONTROL=ignoredups
+fi
+
+export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL
+
+# By default, we want umask to get set. This sets it for login shell
+# Current threshold for system reserved uid/gids is 200
+# You could check uidgid reservation validity in
+# /usr/share/doc/setup-*/uidgid file
+if [ $UID -gt 199 ] && [ "`/usr/bin/id -gn`" = "`/usr/bin/id -un`" ]; then
+    umask 002
+else
+    umask 022
+fi
+
+for i in /etc/profile.d/*.sh /etc/profile.d/sh.local ; do
+    if [ -r "$i" ]; then
+        if [ "${-#*i}" != "$-" ]; then 
+            . "$i"
+        else
+            . "$i" >/dev/null
+        fi
+    fi
+done
+
+unset i
+unset -f pathmunge
+
+if [ -n "${BASH_VERSION-}" ] ; then
+        if [ -f /etc/bashrc ] ; then
+                # Bash login shells run only /etc/profile
+                # Bash non-login shells run only /etc/bashrc
+                # Check for double sourcing is done in /etc/bashrc.
+                . /etc/bashrc
+       fi
+fi
+------
+ 18:22:17 up 80 days,  9:30, 31 users,  load average: 0.62, 0.70, 0.70
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+modyd1   pts/44   172.17.116.50    17:51   30:09   0.11s  0.05s nano part5.txt
+sajjaa7  pts/13   172.17.145.195   16:13    5:21   0.57s  0.57s -bash
+nakamurs pts/4    172.18.117.159   16:33    1:40m  0.07s  0.07s -bash
+mohaa143 pts/6    172.18.17.196    18:08    1:50   0.05s  0.05s -bash
+ansars23 pts/10   172.17.189.59    16:21    1:04m  0.12s  0.12s -bash
+parikh5  pts/71   172.17.117.89    17:19   58:01   0.06s  0.06s -bash
+kheraa6  pts/88   172.18.183.210   17:01    1:17m  0.07s  0.07s -bash
+singj93  pts/89   172.17.62.204    14:44    1:48m  0.58s  0.58s -bash
+liu1690  pts/99   172.18.69.208    16:02    1:25m  0.33s  0.07s nano compiletop.sh
+kaurs83  pts/111  172.18.204.129   15:57   16:01   1.47s  1.47s -bash
+balasim  pts/128  172.18.69.222    15:38   16:00   0.33s  0.33s -bash
+shahr73  pts/233  172.18.48.20     16:14    1:51m  0.13s  0.13s -bash
+zhouz229 pts/234  172.18.47.124    17:22    2:09   0.68s  0.34s emacs /home/zhouz229/.bash_profile
+madhus2  pts/230  172.18.60.93     17:59    9:05   0.11s  0.11s -bash
+kheraa6  pts/219  172.18.183.210   18:17    1.00s  0.13s  0.06s w
+vassalm  pts/281  172.18.179.215   18:00   16:15   0.09s  0.09s -bash
+guptae6  pts/337  172.17.112.108   17:41   38:41   0.09s  0.09s -bash
+bhattv11 pts/353  172.18.29.18     14:12    4:08m  2.21s  2.21s /home/bhattv11/.local/bin/zsh -l
+zhoua39  pts/388  172.17.65.81     13:44    4:33m  0.13s  0.13s -bash
+moonemal pts/401  172.17.115.89    17:05    1:16m  0.05s  0.05s -bash
+sivakr6  pts/381  172.17.118.214   17:22   59:37   0.08s  0.02s nano runtop.sh
+liu1690  pts/383  172.18.69.208    17:23   30:29   0.31s  0.31s -bash
+modyd1   pts/385  172.18.50.68     16:15    1:55m  0.12s  0.05s nano part5.txt
+abtahib  pts/389  172.18.64.224    17:47   35:05   0.04s  0.04s -bash
+corradic pts/404  172.18.22.197    17:33   48:25   0.05s  0.05s -bash
+quans6   pts/426  172.18.63.1      16:24    1:20   1.44s  1.44s -bash
+singj93  pts/444  172.18.23.169    17:14    7:50   0.33s  0.33s -bash
+racharls pts/448  172.17.113.160   16:47   25:45   0.50s  0.50s -bash
+zhoue5   pts/457  172.18.203.1     14:51    2:36m  0.70s  0.70s -bash
+wakyendj pts/440  172.17.238.184   16:49   36:17   0.28s  0.28s -bash
+wakyendj pts/454  172.17.238.184   17:08   28:09   0.22s  0.22s -bash
