@@ -6,7 +6,7 @@ SRC_DIR = src
 TEST_DIR = test
 
 # build directory
-$(shell mkdir -p $(BUILD_DIR))
+$(shell ./builddir.sh)
 
 # compile library.c to object file
 $(BUILD_DIR)/library.o: $(SRC_DIR)/library.c
