@@ -7,3 +7,6 @@
 [submodule "L08/test-with-actions"]
 	path = L08/test-with-actions
 	url = https://github.com/angadk4/test-with-actions
+[submodule "L08/CS1XC3_L08_P3"]
+	path = L08/CS1XC3_L08_P3
+	url = https://github.com/angadk4/CS1XC3_L08_P3
