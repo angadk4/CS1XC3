@@ -1,3 +1,6 @@
 [submodule "1XC3_L07"]
 	path = 1XC3_L07
 	url = https://github.com/angadk4/1XC3_L07
+[submodule "L08/hello-github-actions"]
+	path = L08/hello-github-actions
+	url = https://github.com/angadk4/hello-github-actions
