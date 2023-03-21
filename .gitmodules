@@ -4,3 +4,6 @@
 [submodule "L08/hello-github-actions"]
 	path = L08/hello-github-actions
 	url = https://github.com/angadk4/hello-github-actions
+[submodule "L08/test-with-actions"]
+	path = L08/test-with-actions
+	url = https://github.com/angadk4/test-with-actions
