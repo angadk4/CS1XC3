@@ -10,3 +10,6 @@
 [submodule "L08/CS1XC3_L08_P3"]
 	path = L08/CS1XC3_L08_P3
 	url = https://github.com/angadk4/CS1XC3_L08_P3
+[submodule "L09/CS1XC3_L09"]
+	path = L09/CS1XC3_L09
+	url = https://github.com/angadk4/CS1XC3_L09/
