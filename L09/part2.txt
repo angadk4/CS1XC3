@@ -1,0 +1,9 @@
+Freedom : $$2 + 2 = 4$$
+
+Quadratic : $\frac{-b \pm\sqrt{b^2-4ac}}{2a}$
+
+Integration : $\int udv = uv - \int vdu$
+
+Fourier : $\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx$
+
+Ponens : $P \implies Q, P \vdash Q$
