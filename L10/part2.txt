@@ -11,5 +11,5 @@
 11.	find . -name '*.sh' -exec chmod +x {} \;
 12.	find . -type f -name "* and *" -exec sh -c 'head -n 10 "{}" >> allheads.txt' \;
 13.	find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" \) -exec cp {} image_backup/ \;
-14.	cat filenames.txt
-15.	while read -r pattern; do find . -type f -name "$pattern"; done < allTheGlobs.txt
+14.	cat exercises/Part2/filenames.txt
+15.	while read -r pattern; do find . -type f -name "$pattern"; done < /home/kheraa6/CS1XC3/exercises/Part2/allTheGlobs.txt
