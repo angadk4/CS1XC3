@@ -1,0 +1,12 @@
+./SLIDES/Topic 2 - Version Control/github.png
+./SLIDES/Topic 4 - Basic Constructs in C/escape.png
+./SLIDES/Topic 1 - Shell Interactivity/shells.png
+./SLIDES/Topic 1 - Shell Interactivity/obiwan.jpg
+./SLIDES/Topic 10 - Strings and File IO in C/floats.png
+./SLIDES/Topic 10 - Strings and File IO in C/string.png
+./SLIDES/Topic 10 - Strings and File IO in C/strtod.png
+./SLIDES/Topic 10 - Strings and File IO in C/width2.png
+./SLIDES/fight.webp
+./SLIDES/Topic 9 - Makefiles/stages.png
+./SLIDES/Topic 12 - Data Structures in C/orgate.png
+./SLIDES/Topic 6 - Functions and Arrays in C/graphs/string.png

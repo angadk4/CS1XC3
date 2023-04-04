@@ -1,0 +1,4 @@
+\beamer@sectionintoc {2}{Thinking in C}{3}{0}{1}
+\beamer@sectionintoc {3}{The C Programming Language}{7}{0}{2}
+\beamer@sectionintoc {4}{Other C-Based Languages}{14}{0}{3}
+\beamer@sectionintoc {5}{Working with C}{18}{0}{4}

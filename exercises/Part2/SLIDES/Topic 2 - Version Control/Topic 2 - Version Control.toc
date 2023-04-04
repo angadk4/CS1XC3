@@ -1,0 +1,7 @@
+\beamer@sectionintoc {2}{Large Project Challenges}{3}{0}{1}
+\beamer@sectionintoc {3}{Version Control}{8}{0}{2}
+\beamer@sectionintoc {4}{The Basics of Git}{12}{0}{3}
+\beamer@sectionintoc {5}{Networking Repositories}{18}{0}{4}
+\beamer@sectionintoc {6}{Managing Branches}{21}{0}{5}
+\beamer@sectionintoc {7}{Merging Branches}{25}{0}{6}
+\beamer@sectionintoc {8}{Errata}{28}{0}{7}

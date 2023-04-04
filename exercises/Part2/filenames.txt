@@ -1,0 +1,6 @@
+./SLIDES/Topic 2 - Version Control/Topic 2 - Version Control.tex
+./SLIDES/Topic 4 - Basic Constructs in C/Topic 4 - Basic Constructs in C.tex
+./SLIDES/Topic 13 - Preprocessor Directives in C/Topic 13 - C Errata.tex
+./SLIDES/Topic 3 - Introduction to C/Topic 3 - Introduction to C.tex
+./SLIDES/Topic 8 - Pointers in C/Topic 8 - Pointers in C.tex
+./SLIDES/Topic 6 - Functions and Arrays in C/Topic 6 - Functions and Arrays in C.tex

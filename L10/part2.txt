@@ -1,0 +1,15 @@
+1.	find . -name "*.tex"
+2.	find . -name "*.tex" ! -name "template.tex"
+3.	find . -name "*.tex" -exec wc -l {} \;
+4.	find . \( -name "*.tex" -o -name "*.pdf" -o -name "*.toc" \)
+5.	find . -name "Topic_[7-9]*.pdf" -o -name "Topic_[1-9][0-9]*.pdf"
+6.	find . -name "*~" -delete
+7.	find . -name "#*#" -delete
+8.	find . -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.bmp' -o -name '*.webp' \) -printf "%f\n" | awk 'length($0) == 10 {print}' > goodFiles.txt
+9.	find . -name '*.log' -exec cat {} >> allTheLogs.log \;
+10.	find . -name '*C*.aux' -exec sed -n '10p' {} \;
+11.	find . -name '*.sh' -exec chmod +x {} \;
+12.	find . -type f -name "* and *" -exec sh -c 'head -n 10 "{}" >> allheads.txt' \;
+13.	find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" \) -exec cp {} image_backup/ \;
+14.	cat filenames.txt
+15.	while read -r pattern; do find . -type f -name "$pattern"; done < allTheGlobs.txt

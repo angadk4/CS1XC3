@@ -1,0 +1,10 @@
+1.	grep -r '\\includegraphics' *.tex
+2.	grep -rE '\\begin\{[^{}]+\}' *.tex | grep -vE '\\begin\{[^{}]+\}\{[^{}]+\}' | grep -vE '\\begin\{[^{}]+\}\[[^{}]+\]'
+3.	grep -rwEi 'arbitrary|bitwidth|pointer' .
+4.	grep -rE 'is|am|are|was|were|will be|has been|have been|had been|will have been' *S*.tex
+5.	grep -rPz '(?s)\\begin\{itemize\}\n\\item' .
+6.	grep -rwEi 'pointer\{?[RSTLNErstlne]' .
+7.	grep -rwEo ' [aeiouAEIOU]{2,} ' .
+8.	grep -rPzo 'if\s*\((?:(?!\().)*\)\s*\{[\s\S]*?^}' .
+9.	grep -rE '^(int|void|float|char)(\s*\*+\s+|\s+)[a-zA-Z0-9_]+\s*\([^\)]*\)\s*\{' .
+10.	grep -rwE '\s\d+(\s[\+\-*/]\s\d+)+\s' .

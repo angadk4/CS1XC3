@@ -1,0 +1,11 @@
+1.	find . -name "*.txt" -exec sed -i 's/backwards/forwards/g' {} +
+2.	find . -name "*.tex" -exec sed -i 's/\\includegraphics\[[^]]*\]{[^}]*}//g' {} +
+3.	find . -name "*.tex" -exec sed -i 's/\\begin{itemize}/\\begin{enumerate}/g' {} +
+4.	find . -name "*.{tex,txt}" -exec sed -i 's/\./\\textsuperscript{[citation needed]}\./g' {} +
+5.	find . -name "*.tex" -exec awk 'NR>=100 && NR<=300 {gsub(/\<[a-zA-Z]+ing\>/, "a gerund")} 1' {} \; -exec cp {} {}-new \; -exec mv {}-new {} \;
+6.	find . -name "*.log" -exec sed -i '15,18d' {} +
+7.	find . -name "*.tex" -exec sed -i 's/\\textbf{\([^}]*\)}/\\textit{\1}/g' {} +
+8.	find . -name "*.{tex,txt}" -exec sed -i 's/[aeiouAEIOU]//g' {} +
+9.	find . -name "*.tex" -exec sed -i 's/^\([^%]*[^\\]\)%.*$/\1/' {} +
+10.	find . -name "*.{tex,txt}" -exec sed -i 's/[.,:;?!]/!/g' {} +
+
