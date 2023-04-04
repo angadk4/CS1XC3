@@ -8,4 +8,3 @@
 8.	find . -name "*.{tex,txt}" -exec sed -i 's/[aeiouAEIOU]//g' {} +
 9.	find . -name "*.tex" -exec sed -i 's/^\([^%]*[^\\]\)%.*$/\1/' {} +
 10.	find . -name "*.{tex,txt}" -exec sed -i 's/[.,:;?!]/!/g' {} +
-
